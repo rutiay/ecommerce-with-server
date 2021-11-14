@@ -1,0 +1,82 @@
+GET http://localhost:8080/products
+
+###
+
+GET http://localhost:8080/products/iPhone
+
+###
+
+GET http://localhost:8080/products/iPad
+
+###
+
+GET http://localhost:8080/products/Mac
+
+###
+
+GET http://localhost:8080/products/Apple%20Watch
+
+###
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+    "name": "dzc",
+    "price": 2000,
+    "description": "bgfdbfds",
+    "category": "iPhone",
+    "pictures": ["https://i.ibb.co/C1QqyH5/iphone-xr-black-select-201809.jpg", "https://i.ibb.co/XSy5sTw/black-xr-2.png"]
+}
+
+###
+
+DELETE http://localhost:8080/products/6188d1d754ed6d6bb6f5da87
+
+###
+
+PATCH http://localhost:8080/products/6188d1d754ed6d6bb6f5da87
+Content-Type: application/json
+
+{
+    "id": 22,
+    "name": "vdslz",
+    "price": 2333,
+    "description": "ghsihd",
+    "category": "iPhone",
+    "pictures": ["gregr", "reehegr"]
+}
+
+###
+GET http://localhost:8080/cart/6188dcd01d93349ca0a2d866
+
+###
+PATCH http://localhost:8080/cart/delete/6188dcd01d93349ca0a2d866
+Content-Type: application/json
+
+{
+    "_id": "61816e314ca516c71e4e6a13"
+}
+
+###
+PATCH http://localhost:8080/cart/add/6188dcd01d93349ca0a2d866
+Content-Type: application/json
+
+{
+    "_id": "61816e314ca516c71e4e6a13"
+}
+
+###
+
+GET http://localhost:8080/contact
+
+###
+POST http://localhost:8080/contact
+Content-Type: application/json
+
+{
+    "firstName": "ruti",
+    "lastName": "ayaso",
+    "email": "rutiayaso0@gmail.com",
+    "phone": "0504599660",
+    "message": "hello there"
+}

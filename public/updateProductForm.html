@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/productForm.css">
+    <title>Update Product</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navBar">
+                <li class="navList"><a href="index.html"><i class="fa">&#xf179;</i></a></li>
+                <li class="navList"><a href="mac.html">Mac</a></li>
+                <li class="navList"><a href="iPad.html">iPad</a></li>
+                <li class="navList"><a href="iPhone.html">iPhone</a></li>
+                <li class="navList"><a href="watch.html">Watch</a></li>
+                <li class="navList"><a href="contact.html">Contact</a></li>
+                <li class="navList"><a href="cart.html"><i class="fa">&#xf07a;</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <br><br>
+            <h1>Update Product</h1>
+            <form id="updateProductForm">
+                <label for="productName">Product Name</label><br>
+                <input type="text" name="productName" id="name" autofocus required><br>
+                <label for="price">Price</label><br>
+                <input type="number" name="price" id="price" required><br>
+                <label for="description">Description</label><br>
+                <input type="text" id="description" name="description" required><br>
+                <label for="selectCategory">Category</label><br>
+                <select name="selectCategory" id="category" required>
+                    <option>Select Category</option>
+                    <option value="Apple Watch">Apple Watch</option>
+                    <option value="Mac">Mac</option>
+                    <option value="iPad">iPad</option>
+                    <option value="iPhone">iPhone</option>
+                </select><br>
+                <label for="img1">First image</label><br>
+                <input type="text" name="img1" id="imgOne" required> <br>
+                <label for="img2">Second image</label><br>
+                <input type="text" name="img2" id="imgTwo" required><br>
+                <input type="submit" value="Update">
+        </section>
+        </form>
+        <img src="https://i.ibb.co/g4x787Y/image-108333-3464737.jpg">
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/updateProduct.js"></script>
+</body>
+</html>

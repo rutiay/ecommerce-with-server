@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navBar">
+                <li class="navList"><a href="../index.html"><i class="fa">&#xf179;</i></a></li>
+                <li class="navList"><a href="./mac.html">Mac</a></li>
+                <li class="navList"><a href="./iPad.html">iPad</a></li>
+                <li class="navList"><a href="./iPhone.html">iPhone</a></li>
+                <li class="navList"><a href="./watch.html">Watch</a></li>
+                <li class="navList"><a href="contact.html">Contact</a></li>
+                <li class="navList"><a href="./cart.html"><i class="fa">&#xf07a;</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="mainTitle">Your Cart</h1>
+        <table id="cartTable"></table>
+        <section id="orderSummary">
+            <h1>Order Summary</h1>
+            <hr>
+            <p>Subtotal: <span id="sum"></span></p>
+            <br>
+            <p>Shipping: <span id="shipping"></span></p>
+            <hr>
+            <p>Total: <span id="total"></span></p>
+            <h5>*Free shipping on orders above 2,000₪</h5>
+        </section>
+        <button onclick="checkOutMessage()" type="button" id="checkout">CHECKOUT</button>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: url(../media/img/ipadBackGround.png);
+}
+
+.navList{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.navList a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 500ms;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navList:first-child{
+    font-size: 20px;
+}
+
+.navList:last-child{
+    font-size: 20px;
+}
+
+.navList a:hover{
+    opacity: 1;
+}
+
+#ipadBgVideo{
+    width: 100%;
+    position: relative;
+}
+
+#ipadBgVideo video{
+    width: 100%;
+}
+
+#ipadCaption{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 65px;
+    text-shadow: 2px 4px 4px lightblue;
+    text-align: center;
+    opacity: 0;
+    animation: showText 2s linear 9.6s forwards;
+}
+
+@keyframes showText {
+    0%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#ipadSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ipadImg{
+    width: 75%;
+    height: 350px;
+}
+
+#ipadSection article{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    border: 4px solid white;
+    box-shadow: 0px 0px 2px;
+    border-radius: 15px;
+    background: white;
+    transition-duration: 600ms;
+    margin: 20px 0px;
+}
+
+#ipadSection article:hover{
+    transform: scale(1.02);
+}
+
+.ipadUpdateBtn{
+    background: rgb(143, 143, 165);
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+}
+
+.ipadUpdateBtn:hover{
+    background: black;
+}
+
+.ipadDeleteBtn{
+    background: rgb(143, 143, 165);
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+}
+
+.ipadDeleteBtn:hover{
+    background: black;
+}
+
+.ipadCartBtn{
+    background: rgb(143, 143, 165);
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+}
+
+.ipadCartBtn:hover{
+    background: black;
+}
+
+.ipadPreviousButton{
+    background: transparent;
+    border: transparent;
+    color: black;
+    font-size: 40px;
+
+}
+
+.ipadNextButton{
+    background: transparent;
+    border: transparent;
+    color: black;
+    font-size: 40px;
+}
+
+.ipadPreviousButton:hover{
+    cursor: pointer;
+}
+
+.ipadNextButton:hover{
+    cursor: pointer;
+}
+
+#footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(../media/img/ipadBackGround.png);
+}
+
+.footerLink{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.footerLink a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 500ms;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerLink:nth-child(3){
+    font-size: 30px;
+}
+
+.footerLink a:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width:769px) {
+    #ipadCaption{
+        font-size: 50px;
+        left: 43%;
+    }
+
+    #ipadSection article{
+        width: 45%;
+    }
+    .ipadImg{
+        width: 70%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    #ipadCaption{
+        font-size: 40px;
+        left: 41%;
+        top: 33%;
+    }
+
+    #ipadSection article{
+        width: 90%;
+    }
+
+    .ipadImg{
+        width: 60%;
+        height: 200px;
+    }
+}

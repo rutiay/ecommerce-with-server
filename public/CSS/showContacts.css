@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black;
+    width: 100%;
+    height: auto;
+}
+
+.navList{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.navList a{
+    color: #f5f5f7;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 500ms;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navList:first-child{
+    font-size: 20px;
+}
+
+.navList:last-child{
+    font-size: 20px;
+}
+
+.navList a:hover{
+    opacity: 1;
+}
+
+
+body{
+    background-image: linear-gradient(to right, #fff6e9, #ffefd7, #fffef9, #e3f0ff, #d2e7ff);
+}
+
+#title{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.messages{
+    padding: 5px 10px;
+    background: rgb(255 249 240);
+    border: 1px solid black;
+    margin-left: 28%;
+    width: 50%;
+    height: auto;
+    box-shadow: 6px 4px 7px grey;
+    border-radius: 8px;
+    margin-top: 3%;
+}
+
+.userMessage{
+    color: gray;
+}

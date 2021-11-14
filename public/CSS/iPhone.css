@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.navList{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.navList a{
+    color: #f5f5f7;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 500ms;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navList:first-child{
+    font-size: 20px;
+}
+
+.navList:last-child{
+    font-size: 20px;
+}
+
+.navList a:hover{
+    opacity: 1;
+}
+
+#videoSection{
+    position: relative;
+    width: 100%;
+}
+
+#videoSection video{
+    width: 100%;
+}
+
+#caption{
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    top: 42%;
+    left: 42%;
+    opacity: 0;
+    animation: showText 2s linear 3s forwards;
+}
+
+@keyframes showText {
+    0%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#iphoneSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.iphoneImg{
+    width: 75%;
+    height: 350px;
+}
+
+#iphoneSection article{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    border: 4px solid white;
+    box-shadow: 0px 0px 2px;
+    border-radius: 15px;
+    background: white;
+    transition-duration: 600ms;
+    margin: 20px 0px;
+}
+
+#iphoneSection article:hover{
+    transform: scale(1.02);
+}
+
+.iphoneUpdateBtn{
+    background: rgb(143, 143, 165);
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+}
+
+.iphoneUpdateBtn:hover{
+    background: black;
+}
+
+.iphoneDeleteBtn{
+    background: rgb(143, 143, 165);
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+}
+
+.iphoneDeleteBtn:hover{
+    background: black;
+}
+
+.iphoneCartBtn{
+    background: rgb(143, 143, 165);
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+}
+
+.iphoneCartBtn:hover{
+    background: black;
+}
+
+.iphonePreviousButton{
+    background: transparent;
+    border: transparent;
+    color: black;
+    font-size: 40px;
+
+}
+
+.iphoneNextButton{
+    background: transparent;
+    border: transparent;
+    color: black;
+    font-size: 40px;
+}
+
+.iphonePreviousButton:hover{
+    cursor: pointer;
+}
+
+.iphoneNextButton:hover{
+    cursor: pointer;
+}
+
+#footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerLink{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.footerLink a{
+    color: #f5f5f7;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 500ms;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerLink:nth-child(3){
+    font-size: 30px;
+}
+
+.footerLink a:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width:769px) {
+    #caption{
+        font-size: 60px;
+        left: 35%;
+    }
+
+    #iphoneSection article{
+        width: 45%;
+    }
+
+    .iphoneImg{
+        width: 70%;
+        height: 300px;
+    } 
+}
+
+@media screen and (max-width:426px) {
+    #caption{
+        font-size: 40px;
+        left: 30%;
+    }
+
+    #iphoneSection article{
+        width: 95%;
+    }
+
+    .iphoneImg{
+        width: 60%;
+        height: 250px;
+    } 
+}

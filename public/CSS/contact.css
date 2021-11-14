@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, black 50%, white 50%);
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: black;
+}
+
+.navList{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.navList a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 500ms;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navList:first-child{
+    font-size: 20px;
+}
+
+.navList:last-child{
+    font-size: 20px;
+}
+
+.navList a:hover{
+    opacity: 1;
+}
+
+main{
+    height: 100vh;
+}
+
+#mainTitle{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    width: 45%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#form{
+    display: grid;
+}
+
+#formSection{
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    
+}
+
+#formTitle{
+    position: relative;
+    top: -75px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#mainImg{
+    position: absolute;
+    width: 49%;
+    height: auto;
+    top: 70%;
+}
+
+#button{
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+#getButton{
+    position: absolute;
+    top: 140%;
+    left: 35%;
+    font-size: 20px;
+    border: transparent;
+    padding: 3px;
+    color: white;
+    background: black;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+#getButton:hover{
+    color: black;
+    text-decoration: underline;
+    background: none;
+}
+
+#button:hover{
+    text-decoration: underline;
+}
+
+#footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+}
+
+.footerLink{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.footerLink a{
+    color: #f5f5f7;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 500ms;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerLink:nth-child(3){
+    font-size: 30px;
+}
+
+.footerLink a:hover{
+    opacity: 1;
+}
